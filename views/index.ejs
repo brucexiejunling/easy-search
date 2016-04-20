@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy Search</title>
+    <link rel='stylesheet' href='/index.css' />
+    <script type="text/javascript" src="/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/ajax-file-uploader.js"></script>
+  </head>
+  <body>
+  		<div class="wrap">
+  			<h1>Easy Search</h1>
+  			<div class="top">
+  				<div class="file-upload">
+		  			<input type="file" name="file" id="file">
+		  			<button class="J_upload">上传xlsx</button>
+		  			<span class="file-name"></span>
+		  			<a class="delete hidden">删除</a>
+  				</div>
+  				<div class="options">
+  					<span>
+	  					<label>表格sheet：</label>
+	  					<select name="sheet" class="sheet">
+	  						<option value="1">sheet1</option>
+	  						<option value="2">sheet2</option>
+	  						<option value="3">sheet3</option>
+	  						<option value="4">sheet4</option>
+	  						<option value="5">sheet5</option>
+	  						<option value="6">sheet6</option>
+	  						<option value="7">sheet7</option>
+	  						<option value="8">sheet8</option>
+	  						<option value="9">sheet9</option>
+	  					</select>
+  					</span>
+					<span>
+						<label>条码所在列：</label>
+	  					<select name="col" class="col">
+	  						<option value="1">第1列</option>
+	  						<option value="2" selected="selected">第2列</option>
+	  						<option value="3">第3列</option>
+	  						<option value="4">第4列</option>
+	  						<option value="5">第5列</option>
+	  						<option value="6">第6列</option>
+	  						<option value="7">第7列</option>
+	  						<option value="8">第8列</option>
+	  						<option value="9">第9列</option>
+	  					</select>
+					</span>
+					<button class="generate">生成查询页面</button>
+  				</div>
+  				<div class="current-wrap hidden">当前项：<span class="current-item"></span></div>
+  				<div class="switch-btns hidden">
+  					<button class="prev">上一条</button>
+  					<button class="next">下一条</button>
+  					<span>第<input type="text" class="J_input">条<button class="go">go</button></span>
+  				</div>
+  			</div>
+	  		<div class="bottom hidden">
+	  			<div class="link-wrap">
+	  				页面链接： <a href="" target="_blank" class="J_link"></a>
+	  			</div>
+	  			<iframe id="iframe" src=""></iframe>
+	  		</div>
+		</div>
+		<script type="text/javascript" src="/index.js"></script>
+  </body>
+</html>

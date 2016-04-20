@@ -1,0 +1,102 @@
+body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrap {
+    width: 1080px;
+    border: solid 1px #eee;
+    margin: 20px auto;
+    min-height: 700px;
+
+	a {
+		color: #c40000;
+		cursor: pointer;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	h1 {
+		text-align: center;
+	}
+	
+	.top {
+		margin-bottom: 50px;
+		>div {
+			padding-left: 100px;
+			margin-bottom: 20px;
+		}
+		button {
+			background: #00c09b;
+			border: none;
+			outline: none;
+			color: #fff;
+			padding: 5px 10px;
+			border-radius: 2px;
+			margin-right: 20px;
+		}
+
+		.options {
+			>span {
+				margin-right: 40px;
+			}
+		}
+		.current-wrap {
+			.current-item {
+				display: inline-block;
+				border: solid 1px #ddd;
+				padding: 5px;
+				> span {
+				    margin-right: 20px;
+				    border-right: solid 1px #ddd;
+				    padding: 5px 10px;
+				    strong {
+				    	color: #c40000;
+				    	margin-right: 10px;
+				    }
+
+				    &:last-child {
+						border-right: none;
+				    }
+
+				}
+			}
+		}
+
+		.switch-btns {
+			input {
+				width: 50px;
+				margin: 0px 5px;
+			}
+			.go {
+				margin-left: 10px;
+			}
+		}
+
+	}
+
+    .bottom {
+    	.link-wrap {
+    		margin-bottom: 10px;
+    		padding-left: 100px;
+    	}
+    	a {
+    		text-decoration: none;
+    		width: 700px;
+    		overflow: hidden;
+    		display: inline-block;
+    		white-space: nowrap;
+    		text-overflow: ellipsis;
+    	}
+    	iframe {
+    		width: 100%;
+    		height: 560px;
+    		border: solid 1px #eee;
+    	}
+    }
+
+	.hidden {
+		display: none;
+	}
+}
